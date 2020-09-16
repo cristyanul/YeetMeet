@@ -201,10 +201,10 @@ def meet(update,context):
 			mid = context.bot.send_photo(chat_id=update.message.chat_id, photo=open('ss.png', 'rb'), timeout = 120).message_id
 			os.remove('ss.png')
 		try:
-			browser.find_element_by_xpath("//span[@class='NPEfkd RveJvd snByac' and contains(text(), 'Ask to join')]").click()
+			browser.find_element_by_xpath("//span[@class='NPEfkd RveJvd snByac' and contains(text(), 'Solicită participarea')]").click()
 			time.sleep(10)
 		except:
-			browser.find_element_by_xpath("//span[@class='NPEfkd RveJvd snByac' and contains(text(), 'Join now')]").click()
+			browser.find_element_by_xpath("//span[@class='NPEfkd RveJvd snByac' and contains(text(), 'Participă acum')]").click()
 			time.sleep(10)
 
 		context.bot.delete_message(chat_id=update.message.chat_id ,message_id = mid)
