@@ -46,6 +46,9 @@ def restart(update, context):
         pickle.dump(restart_message, status)
     execl(executable, executable, "chromium.py")
 
+def start(update, context):
+    start_message = context.bot.send_message(chat_id=update.message.chat_id, text="Comenzile disponibile: /restart /status /zoom /meet (google meet)", timeout = 120)
+
 def status(update, context):
 	browser.save_screenshot("ss.png")
 	context.bot.send_chat_action(chat_id=update.message.chat_id, action=ChatAction.UPLOAD_PHOTO)
