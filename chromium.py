@@ -236,6 +236,7 @@ def main():
 	dp.add_handler(CommandHandler("zoom", zoom))
 	dp.add_handler(CommandHandler("meet", meet))
 	dp.add_handler(CommandHandler("restart", restart))
+	dp.add_handler(CommandHandler("start", start))
 	dp.add_handler(CommandHandler("status", status))
 	logging.info("Bot started")
 	updater.start_polling()
