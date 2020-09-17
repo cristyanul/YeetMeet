@@ -127,9 +127,9 @@ def zoom(update, context):
 		os.remove('ss.png')
 
 		context.bot.send_chat_action(chat_id=update.message.chat_id, action=ChatAction.TYPING)
-		context.bot.send_message(chat_id=update.message.chat_id, text="Attending you lecture. You can chill :v")
+		context.bot.send_message(chat_id=update.message.chat_id, text="Ai scapat de scoala maica!")
 		pause
-		logging.info("STAAAAPH!!")
+		logging.info("NA ATAT O FOST!!")
 
 	
 	except:
@@ -224,12 +224,12 @@ def meet(update,context):
 		os.remove('ss.png')
 
 		context.bot.send_chat_action(chat_id=update.message.chat_id, action=ChatAction.TYPING)
-		context.bot.send_message(chat_id=update.message.chat_id, text="Attending you lecture. You can chill :v")
+		context.bot.send_message(chat_id=update.message.chat_id, text="Ai scapat de scoala maica!")
 		pause
-		logging.info("STAAAAPH!!")
+		logging.info("NA ATAT O FOST!!")
 	except:
 		browser.quit()
-		context.bot.send_message(chat_id=update.message.chat_id, text="Some error occurred retry!")
+		context.bot.send_message(chat_id=update.message.chat_id, text="Eroare 40496540940!")
 
 
 def main():
